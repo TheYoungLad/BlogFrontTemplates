@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>博客详情页</title>
+    <!--标题栏图标-->
+    <link rel="icon" href="../static/images/Common/favicon.ico" type="images/x-ico"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/semantic-ui/2.2.4/semantic.min.css">
+    <link rel="stylesheet" href="../static/css/animate.min.css">
+    <!--引入typo.css-->
+    <link rel="stylesheet" href="../static/css/typo.css">
+    <!--引入prism-->
+    <link rel="stylesheet" href="../static/lib/prism/prism.css">
+    <!--引入tocbot-->
+    <link rel="stylesheet" href="../static/lib/tocbot/tocbot.css">
+
+    <link rel="stylesheet" href="../static/css/me-common.css">
+    <link rel="stylesheet" href="../static/css/me-special.css">
+    <link rel="stylesheet" href="../static/css/me-media.css">
+</head>
+<body>
+
+<!------导航------>
+<!--inverted:颜色反转；attached消除圆角-->
+<nav class="ui inverted attached segment m-padded-tb-mini">
+    <div class="ui container">
+        <div class="ui inverted secondary stackable menu">
+            <img src="../static/images/Common/logo_row_simple.png"
+                 class="left float image m-margin-right-middle" height="50px" alt="">
+            <a href="index.html" class="m-item item m-mobile-hide"><i class="home icon m-margin-right-no"></i>首页</a>
+            <a href="categories.html" class="m-item item m-mobile-hide"><i
+                    class="folder open icon m-margin-right-no"></i>分类</a>
+            <a href="tags.html" class="m-item item m-mobile-hide"><i class="tags icon m-margin-right-no"></i>标签</a>
+            <a href="archives.html" class="m-item item m-mobile-hide"><i
+                    class="archive icon m-margin-right-no"></i>归档</a>
+            <a href="#" class="m-item item m-mobile-hide"><i class="heartbeat icon m-margin-right-no"></i>娱乐<i
+                    class="angle down icon m-margin-right-no "></i></a>
+            <a href="link.html" class="m-item item m-mobile-hide"><i class="linkify icon m-margin-right-no"></i>外链</a>
+            <a href="about.html" class="m-item item m-mobile-hide"><i class="user icon m-margin-right-no"></i>关于我</a>
+            <div class="right m-item item m-mobile-hide">
+                <div class="ui inverted transparent input">
+                    <input type="text" placeholder="请输入标题关键字">
+                    <i class="search link icon"></i>
+                </div>
+                <!--            <div class="ui buttons">-->
+                <!--                <button class="ui teal button">登录</button>-->
+                <!--                <div class="or"></div>-->
+                <!--                <button class="ui button">注册</button>-->
+                <!--            </div>-->
+            </div>
+        </div>
+    </div>
+    <a href="#" class="ui black menu toggle icon button m-right-top m-mobile-show">
+        <i class="sidebar icon"></i>
+    </a>
+</nav>
+
+
+<!------中间内容------->
+<div id="waypoint" class="m-padded-tb-big m-container-small animate__animated animate__fadeIn">
+    <div class="ui container">
+        <div class="ui top attached segment m-padded-big">
+            <h2 class="m-margin-bottom-small">
+                <a class="ui teal right inverted  label m-margin-right-small" style="vertical-align: middle;">原创</a>
+                服务器常用的状态码及其对应的含义
+            </h2>
+            <div class="ui mini horizontal link list">
+                <div class="item m-item-black m-text-bigger">
+                    <i class="calendar icon"></i>发表于：2017-10-02
+                </div>
+                <div class="item m-item-black m-text-bigger">
+                    <i class="history icon"></i>更新于：2017-10-02
+                </div>
+                <div class="item m-item-black m-text-bigger">
+                    <i class="inbox icon"></i>分类名：认知强化
+                </div>
+                <div class="item m-item-black m-text-bigger">
+                    <i class="tag icon"></i>标签：软件开发; 后端开发; SSM框架
+                </div>
+                <br/>
+                <div class="item m-margin-left-no m-item-black m-text-bigger">
+                    <i class="file word outline icon"></i>字数总计：3k
+                </div>
+                <div class="item m-item-black m-text-bigger">
+                    <i class="clock outline icon"></i>预计用时：5min
+                </div>
+                <div class="item m-item-black m-text-bigger">
+                    <i class="eye icon"></i>浏览量：222
+                </div>
+                <div class="item m-item-black m-text-bigger">
+                    <i class="thumbs up icon"></i>点赞数：2
+                </div>
+                <div class="item m-item-black m-text-bigger">
+                    <i class="comment icon"></i>评论数：2
+                </div>
+            </div>
+
+            <!--分割线-->
+            <div class="m-margin-tb-small">
+                <div class="ui section divider m-margin-tb-no m-divider-short"></div>
+                <div class="ui section divider m-margin-tb-no m-divider-long"></div>
+            </div>
+
+            <br/>
+            <img src="../static/images/Index/page-cover.jpg" alt="" class="ui fluid rounded image m-margin-bottom-large">
+
+            <!--分割线-->
+            <h4 class="ui horizontal divider header m-margin-top-large"><i class="tag icon"></i>Description</h4>
+
+            <div id="content" class="typo typo-selection ui segment basic js-toc-content">
+                <h2 id="1-服务器常用的状态码及其对应的含义如下："><a href="#1-服务器常用的状态码及其对应的含义如下：" class="headerlink"
+                                                  title="1. 服务器常用的状态码及其对应的含义如下："></a>1. 服务器常用的状态码及其对应的含义如下：</h2>
+                <h3 id="1-1-概括："><a href="#1-1-概括：" class="headerlink" title="1.1 概括："></a>1.1 概括：</h3>
+                <p> 1xx:信息响应类，表示接收到请求并且继续处理 </p>
+                <p> 2xx:处理成功响应类，表示动作被成功接收、理解和接受 </p>
+                <p> 3xx:重定向响应类，为了完成指定的动作，必须接受进一步处理 </p>
+                <p> 4xx:客户端错误，客户请求包含语法错误或者是不能正确执行 </p>
+                <p> 5xx:服务端错误，服务器不能正确执行一个正确的请求</p>
+                <h3 id="1-2详细情况："><a href="#1-2详细情况：" class="headerlink" title="1.2详细情况："></a>1.2详细情况：</h3>
+                <p>100——客户必须继续发出请求</p>
+                <p>101——客户要求服务器根据请求转换HTTP协议版本</p>
+                <p>200——交易成功</p>
+                <p>201——提示知道新文件的URL</p>
+                <p>202——接受和处理、但处理未完成</p>
+                <p>203——返回信息不确定或不完整</p>
+                <pre><code class="language-css">p { color: red }</code></pre>
+                <p>204——请求收到，但返回信息为空</p>
+                <p>205——服务器完成了请求，用户代理必须复位当前已经浏览过的文件</p>
+                <p>206——服务器已经完成了部分用户的GET请求</p>
+                <p>300——请求的资源可在多处得到</p>
+                <p>301——删除请求数据</p>
+                <p>302——在其他地址发现了请求数据</p>
+                <p>303——建议客户访问其他URL或访问方式</p>
+                <p>304——客户端已经执行了GET，但文件未变化</p>
+                <p>305——请求的资源必须从服务器指定的地址得到</p>
+                <p>306——前一版本HTTP中使用的代码，现行版本中不再使用</p>
+                <p>307——申明请求的资源临时性删除</p>
+                <p>400——错误请求，如语法错误</p>
+                <p>401——请求授权失败</p>
+                <p>402——保留有效ChargeTo头响应</p>
+                <p>403——请求不允许</p>
+                <p>404——没有发现文件、查询或URl</p>
+                <p>405——用户在Request-Line字段定义的方法不允许</p>
+                <p>406——根据用户发送的Accept拖，请求资源不可访问</p>
+                <p>407——类似401，用户必须首先在代理服务器上得到授权</p>
+                <p>408——客户端没有在用户指定的时间内完成请求</p>
+                <p>409——对当前资源状态，请求不能完成</p>
+                <p>410——服务器上不再有此资源且无进一步的参考地址</p>
+                <p>411——服务器拒绝用户定义的Content-Length属性请求</p>
+                <p>412——一个或多个请求头字段在当前请求中错误</p>
+                <p>413——请求的资源大于服务器允许的大小</p>
+                <p>414——请求的资源URL长于服务器允许的长度</p>
+                <p>415——请求资源不支持请求项目格式</p>
+                <p>416——请求中包含Range请求头字段，在当前请求资源范围内没有range指示值，请求也不包含If-Range请求头字段</p>
+                <p>417——服务器不满足请求Expect头字段指定的期望值，如果是代理服务器，可能是下一级服务器不能满足请求</p>
+                <p>500——服务器产生内部错误</p>
+                <p>501——服务器不支持请求的函数</p>
+                <p>502——服务器暂时不可用，有时是为了防止发生系统过载</p>
+                <p>503——服务器过载或暂停维修</p>
+                <p>504——关口过载，服务器使用另一个关口或服务来响应用户，等待时间设定值较长</p>
+                <p>505——服务器不支持或拒绝支请求头中指定的HTTP版本</p>
+                <h2 id="2-xmlhttp-readyState的值及解释"><a href="#2-xmlhttp-readyState的值及解释" class="headerlink"
+                                                      title="2. xmlhttp.readyState的值及解释"></a>2. xmlhttp.readyState的值及解释
+                </h2>
+                <p> 0：请求未初始化（还没有调用 open()）。</p>
+                <p> 1：请求已经建立，但是还没有发送（还没有调用 send()）。</p>
+                <p> 2：请求已发送，正在处理中（通常现在可以从响应中获取内容头）。</p>
+                <p> 3：请求在处理中；通常响应中已有部分数据可用了，但是服务器还没有完成响应的生成。</p>
+                <p> 4：响应已完成；您可以获取并使用服务器的响应了。</p>
+            </div>
+
+
+            <div id="comment-container">
+                <h4 class="ui horizontal divider header m-margin-tb-large"><i class="comments icon"></i>Comments</h4>
+                <div class="ui form m-comment-box m-padded-small">
+                    <input type="text" class="m-comment-input m-inline-block" name="nickname" placeholder="NickName">
+                    <input type="text" class="m-comment-input m-inline-block" name="email" placeholder="Email">
+                    <input type="text" class="m-comment-input m-inline-block" name="website"
+                           placeholder="Website(http://)">
+
+                    <textarea name="content" class="m-comment-textarea" placeholder="记得留下你的昵称和邮箱...可以更快速得到回复"
+                              rows="5"></textarea>
+                    <div class="ui aligned two column grid">
+                        <div class="column"></div>
+                        <div class=" right aligned column">
+                            <button class="ui right  teal button m-margin-tb-small m-margin-bottom-middle">发布</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!--留言区域列表-->
+                <div class="ui basic segment">
+                    <div class="ui threaded comments">
+                        <h3 class="ui header"><font style="vertical-align: inherit;"><font
+                                style="vertical-align: inherit;">1238 Comments</font></font></h3>
+                        <div class="comment">
+                            <a class="avatar">
+                                <img src="../static/images/Common/avatar.png">
+                            </a>
+                            <div class="content">
+                                <a class="author"><font style="vertical-align: inherit;"><font
+                                        style="vertical-align: inherit;">马特</font></font></a>
+                                <div class="metadata">
+                                    <span class="date">今天下午 5:42</span>
+                                </div>
+                                <div class="text">太赞了！</div>
+                                <div class="actions">
+                                    <a class="reply"><font style="vertical-align: inherit;"><font
+                                            style="vertical-align: inherit;">回复</font></font></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="comment">
+                            <a class="avatar">
+                                <img src="../static/images/Common/avatar.png">
+                            </a>
+                            <div class="content">
+                                <a class="author">Elliot Fu</a>
+                                <div class="metadata">
+                                    <span class="date">昨天上午12:30</span>
+                                </div>
+                                <div class="text">
+                                    <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">这对我的研究是非常有用.谢谢!</font></font>
+                                    </p>
+                                </div>
+                                <div class="actions">
+                                    <a class="reply"><font style="vertical-align: inherit;"><font
+                                            style="vertical-align: inherit;">回复</font></font></a>
+                                </div>
+                            </div>
+                            <div class="comments">
+                                <div class="comment">
+                                    <a class="avatar">
+                                        <img src="../static/images/Common/avatar.png">
+                                    </a>
+                                    <div class="content">
+                                        <a class="author"><font style="vertical-align: inherit;"><font
+                                                style="vertical-align: inherit;">珍妮·赫斯（Jenny Hess）</font></font></a>
+                                        <div class="metadata">
+                                            <span class="date">刚刚</span>
+                                        </div>
+                                        <div class="text">艾略特你永远是多么正确 :)</div>
+                                        <div class="actions">
+                                            <a class="reply"><font style="vertical-align: inherit;"><font
+                                                    style="vertical-align: inherit;">回复</font></font></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="comment">
+                            <a class="avatar">
+                                <img src="../static/images/Common/avatar.png">
+                            </a>
+                            <div class="content">
+                                <a class="author"><font style="vertical-align: inherit;"><font
+                                        style="vertical-align: inherit;">乔·亨德森</font></font></a>
+                                <div class="metadata">
+                                    <span class="date">5 天以前</span>
+                                </div>
+                                <div class="text">老兄，这太棒了。非常感谢。</div>
+                                <div class="actions">
+                                    <a class="reply"><font style="vertical-align: inherit;"><font
+                                            style="vertical-align: inherit;">回复</font></font></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+<br>
+<br>
+
+<div id="toolbar" class="m-fixed m-right-bottom m-padded-middle" style="display: none">
+    <div class="ui vertical icon buttons ">
+        <button type="button" class="ui teal toc button">目录</button>
+        <a href="#comment-container" class="ui teal button">评论</a>
+        <button type="button" class="ui wechat teal button">
+            <i class="weixin icon" style="margin: auto!important;"></i>
+            </button>
+        <div id="toTop-button" class="ui teal button">
+            <i class="arrow up icon" style="margin: auto!important;"></i>
+        </div>
+    </div>
+</div>
+
+<div class="ui toc-container flowing popup transition hidden" style="width: 250px!important;">
+    <ol class="js-toc">
+    </ol>
+</div>
+
+<div id="qrcode" class="ui wechat-qr flowing popup transition hidden " style="width: 120px!important;">
+<!--    <img src="./static/images/Common/WeChat.png" alt="" class="ui rounded image" style="width: 120px!important;">-->
+</div>
+
+
+<!------底部footer------>
+<footer>
+    <!--底部teal颜色的条-->
+    <div class="ui segment vertical teal inverted m-padded-tb-mini "></div>
+    <!--底部footer正文-->
+    <div class="ui inverted vertical segment m-padded-tb-big">
+        <div class="ui container">
+            <div class="ui stackable grid">
+                <!--QQ微信联系方式二维码及打赏二维码占六个栅栏-->
+                <div class="five wide center aligned column m-children-center">
+                    <!--QQ联系方式二维码-->
+                    <div class="m-inline-block m-margin-right-small">
+                        <img src="../static/images/Common/QQ.png" class="ui rounded image" alt=""
+                             style="width: 100px;height: 100px">
+                        <span class="m-margin-top-small m-opacity-mini">我的QQ</span>
+                    </div>
+                    <!--微信联系方式二维码-->
+                    <div class="m-inline-block m-margin-right-small">
+                        <img src="../static/images/Common/WeChat.png" class="ui rounded image" alt=""
+                             style="width: 100px;height: 100px">
+                        <span class="m-margin-top-small m-opacity-mini">我的微信</span>
+                    </div>
+                    <!--打赏方式二维码-->
+                    <div class="m-inline-block">
+                        <img src="../static/images/Common/Pay.png" class="ui rounded image" alt=""
+                             style="width: 100px;height: 100px">
+                        <span class="m-margin-top-small m-opacity-mini" style="color: red">打赏</span>
+                    </div>
+                </div>
+                <!--站点声明文字表述战11个栅栏-->
+                <div class="eleven wide left aligned column ">
+                    <h4 class="ui teal header">站点声明：</h4>
+                    <p class="m-opacity-mini">1.文中的商标及图像版权属于其合法持有人，只供传递信息之用，非商务用途。交流时请遵守理性，宽容的原则。</p>
+                    <p class="m-opacity-mini">2.所有文章未经授权禁止转载、摘编、复制或建立镜像，如有违反，追究法律责任。</p>
+                    <p class="m-opacity-mini">Copyright © 2020 xinglongfei.cn. Designed by Phoenix.
+                        备案号：京ICP备xxxxxxxx号-x </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.2/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/jquery.scrollto@2.1.2/jquery.scrollTo.min.js"></script>
+<script src="../static/lib/prism/prism.js"></script>
+<script src="../static/lib/tocbot/tocbot.js"></script>
+<script src="../static/lib/qrcode/qrcode.min.js"></script>
+<script src="../static/lib/waypoint/jquery.waypoints.min.js"></script>
+
+<script>
+    $('.menu.toggle').click(function () {
+        $('.m-item').toggleClass('m-mobile-hide');
+    });
+
+    tocbot.init({
+        // Where to render the table of contents.
+        tocSelector: '.js-toc',
+        // Where to grab the headings to build the table of contents.
+        contentSelector: '.js-toc-content',
+        // Which headings to grab inside of the contentSelector element.
+        headingSelector: 'h1, h2, h3, h4, h5',
+        // For headings inside relative or absolute positioned containers within content.
+        hasInnerContainers: true,
+    });
+
+
+    $('#payButton').popup({
+        popup: $('.payQR.popup'),
+        on: 'click',
+        position: 'top center'
+    });
+    $('.toc.button').popup({
+        popup: $('.toc-container.popup'),
+        on: 'click',
+        position: 'left center'
+    });
+    $('.wechat').popup({
+        popup: $('.wechat-qr'),
+        position: 'left center'
+    });
+
+    var qrcode = new QRCode("qrcode", {
+        text: "http://jindo.dev.naver.com/collie",
+        width: 110,
+        height: 110,
+        colorDark : "#000000",
+        colorLight : "#ffffff",
+        correctLevel : QRCode.CorrectLevel.H
+    });
+
+    $('#toTop-button').click(function () {
+        $(window).scrollTo(0,500);
+    })
+
+    var waypoint = new Waypoint({
+        element: document.getElementById('waypoint'),
+        handler: function(direction) {
+            if(direction == 'down'){
+                $('#toolbar').show();
+            }else {
+                $('#toolbar').hide(500);
+            }
+            console.log('Scrolled to waypoint!'+direction);
+        }
+    })
+
+</script>
+
+</body>
+</html>
